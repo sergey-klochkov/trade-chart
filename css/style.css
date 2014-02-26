@@ -1,0 +1,92 @@
+html {
+    /*background: url('../img/background.png') repeat;*/
+}
+canvas.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    z-index: 500;
+}
+
+canvas.canvas.axis-canvas {
+    position: relative;
+}
+
+canvas.aux-canvas {
+    z-index: 501;
+    cursor: url('../img/cursor.cur'), crosshair;
+}
+
+canvas.aux-canvas.grabbed {
+    cursor: move;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 1px;
+    overflow: auto;
+}
+
+div.value-badge {
+    position: absolute;
+    /*border-radius: 6px;*/
+    margin: 0 0 0 2px;
+    width: 51px;
+    height: 18px;
+    line-height: 18px;
+    background: #333;
+    color: #FFF;
+    font-size: 16px;
+    font-family: 'Calibri';
+    text-indent: 3px;
+    z-index: 502;
+    border-radius: 5px;
+}
+
+.table-chart.dark div.value-badge {
+    background: #FFF;
+    color: #000;
+}
+
+div.value-badge.hidden {
+    display: none;
+}
+
+table.table-chart div.canvas-wrapper {
+    position:relative;
+    display:block;
+    height: 100%;
+    width:100%;
+}
+#chart-container {
+    margin: 20px;
+}
+div#candle-stick-plate {
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.table-chart td {
+    border: 1px solid #ccc;
+}
+.table-chart.dark tr {
+    background-color: #111;
+}
+.table-chart.light tr {
+    background-color: #FFF;
+}
+.table-chart tr.row-buttons {
+    background-color: #FFF;
+    height: 50px;
+}
+button.btn.btn-default {
+    border-radius: 0 !important;
+}
+#chart-controls {
+    margin-bottom: -1px;
+}
